@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml -->
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml" rel="canonical"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/b59a36cebf"></script><script type="text/javascript" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/pd.js"></script><script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/nr-1044.min.js"></script><script async="" src="https://static.ads-twitter.com/uwt.js"></script><script type="text/javascript" async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/f.txt"></script><script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/identity.js" async=""></script><script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/130415897775561" async=""></script><script async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/fbevents.js"></script><script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/aquant.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/analytics.js"></script><script type="text/javascript" async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/mwgt_3.6.js"></script><script async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/gtm.js"></script><script async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/vck.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="https://www.solodev.com/favicon.ico">
+<link href="./Adding a Scroll Down Anchor to your Website _ Solodev_files/app.min.css" rel="stylesheet">
+<script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/jquery.min.js"></script>
+<script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/popper.min.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <title>Adding a Scroll Down Anchor to your Website | Solodev</title>
+    <meta name="keywords" content="Website
+Navigation
+Scroll Down ">
+    <meta content="Solodev" name="author">
+    <meta name="description" content="Today, on the Solodev Blog: Make your Website Navigation Easier by Adding a Scroll Down Anchor">
+    <meta name="title" content="Adding a Scroll Down Anchor to your Website | Solodev">
+    <meta name="https" content="0">
+    <meta name="DC.Date" content="2018-01-05T17:25:41-05:00">
+        
+    <meta content="https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="Adding a Scroll Down Anchor to your Website | Solodev" property="og:title">
+    <meta content="Today, on the Solodev Blog: Make your Website Navigation Easier by Adding a Scroll Down Anchor" property="og:description">
+    <meta property="og:site_name" content="www.solodev.com">
+        <meta property="og:locale" content="en_US">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@solodev">
+    <meta name="twitter:title" content="Adding a Scroll Down Anchor to your Website | Solodev">
+    <meta name="twitter:description" content="Today, on the Solodev Blog: Make your Website Navigation Easier by Adding a Scroll Down Anchor">
+    <meta name="twitter:image" content="">
+
+    
+
+
+    <script>
+    <!--
+    function highlight(blank) {}
+    function openWindow(windowSrc, windowName, height, width) {
+      params = "height="+height+",width="+width+",scrollbars,resizable";
+      newwin = window.open(windowSrc,windowName,params);
+    }
+    function mt(name,domain,subject,body) {
+      var relocation;
+      relocation = "mailto:" + name + "@" + domain;
+      if(subject) {relocation = relocation + "?subject=" + subject;}
+      if(body && subject) {relocation = relocation + "&body=" + body;}
+      if(body && !subject) {relocation = relocation + "?body=" + body;}
+      location.href = relocation;
+    }
+    var pageName = '';
+var pageId = '105';
+    function updateContent(){}
+    function setWait(){}
+    //-->
+    </script>
+
+    
+    <style type="text/css"> .fullscreen { display: ; } </style><script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/embed.js" data-timestamp="1526620984907"></script><script type="text/javascript" async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/account_version_check.html"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.188f59a1df04c219bf32da7f76545092.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.037f55c32651d22255e90738c195e946.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.2fd6d206c06cd51584499fe8219aa635.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"><script type="application/javascript" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/633.js"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981927059/?random=1526620987397&amp;cv=9&amp;fst=1526620987397&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=900&amp;u_w=1440&amp;u_ah=797&amp;u_aw=1440&amp;u_cd=24&amp;u_his=5&amp;u_tz=480&amp;u_java=false&amp;u_nplug=4&amp;u_nmime=5&amp;gtm=G4s&amp;sendb=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.solodev.com%2Fblog%2Fweb-design%2Fadding-a-scroll-down-anchor-to-your-website.stml&amp;ref=https%3A%2F%2Fwww.google.ca%2F&amp;tiba=Adding%20a%20Scroll%20Down%20Anchor%20to%20your%20Website%20%7C%20Solodev&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><style type="text/css" class="ju_CSSJS_default">.ju_Con{text-align:left;z-index:999999;top:0px;left:0px;display:none;font-family:Arial, Helvetica, sans-serif;width:100%;position:absolute;position:fixed; box-sizing:content-box;line-height: normal;-moz-transition: none;-webkit-transition: none;-o-transition: color 0 ease-in;transition: none;} .ju_overlay {text-align: center; display: none; -webkit-transform: translateZ(0); position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; z-index: 999998; background-position: center center; background-repeat: no-repeat; background-size: cover;}.ju_overlay:before {content: '';height: 100%;display: inline-block;vertical-align: middle;} .ju_iframe{border:none !important;width:100%;height:100% !important;display: block;opacity:0;} .ju_inpage_con {padding:0 !important;} .ju_inpage_back {background-position: center center; background-repeat: no-repeat; background-size: cover;} .ju_hideall {display:none !important;} </style><script type="text/javascript" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/analytics"></script><script async="true" type="text/javascript" src="https://s.adroll.com/j/roundtrip.js"></script></head>
+    <body role="document" class=" black-nav" cz-shortcut-listen="true"><div class="dynamicDiv" id="dd.0.0">  
+<nav class="straight-nav fixed-top navbar h-navbar black scrolling is-visible" data-nav-status="toggle">
+   <div class="container">
+      <div class="navbar-header pr-3">
+         <a class="navbar-brand" href="https://www.solodev.com/"><img alt="logo" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/solodev-logo-white.png"></a>
+      </div>
+      <ul class="navbar-nav mr-auto flex-row h-navbar">
+         <li class="navbar-item">
+            <a href="https://www.solodev.com/product/create.stml">Product <i class="fa fa-angle-down"></i></a> 
+        <div class="dropdown white pos-a p-3 d-block">
+          <ul>
+            <li class="purple-theme">
+              <a href="https://www.solodev.com/product/create.stml" class="d-flex align-items-center p-3 text-gray">
+                <i class="abs pull-left pr-3 abs-create-your-website abs-2-5x pos-r line-height-0 text-purple" aria-hidden="true"></i>
+                <p class="mb-0"><span class="font-w600 text-purple">Create Your Website</span><br> Total Design Freedom</p>
+              </a>
+            </li>
+            <li class="orange-theme">
+              <a href="https://www.solodev.com/product/host.stml" class="d-flex align-items-center p-3 text-gray">
+                <i class="abs pull-left pr-3 abs-secure-cloud-hosting abs-2-5x pos-r line-height-0 text-orange" aria-hidden="true"></i>
+                <p class="mb-0"><span class="font-w600 text-orange">Secure Cloud Hosting</span><br> Amazon Web Services</p>
+              </a>
+            </li>
+            <li class="pink-theme">
+              <a href="https://www.solodev.com/product/engage.stml" class="d-flex align-items-center p-3 text-gray">
+                 <i class="abs pull-left pr-3 abs-engage-audience abs-2-5x pos-r line-height-0 text-pink" aria-hidden="true"></i>
+                <p class="mb-0"><span class="font-w600 text-pink">Engage Your Audience</span><br> Digital Marketing Hub</p>
+              </a>
+            </li>
+            <li class="blue-theme">
+              <a href="https://www.solodev.com/product/support.stml" class="d-flex align-items-center p-3 text-gray">
+                <i class="abs pull-left pr-3 abs-we-can-help abs-2-5x pos-r line-height-0 text-blue" aria-hidden="true"></i>
+                <p class="mb-0"><span class="font-w600 text-blue">We Can Help</span><br> World Class Support</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+         </li>
+         <li class="navbar-item">
+            <a href="https://www.solodev.com/pricing">Pricing</a>
+         </li>
+         <li class="navbar-item">
+            <a href="https://www.solodev.com/resources">Resources</a>
+         </li>
+         <li class="navbar-item gallery-link">
+            <a href="https://www.solodev.com/customers">Customers</a>
+         </li>
+         <li class="navbar-item">
+            <a href="https://www.solodev.com/blog">Blog</a>
+         </li>
+      </ul>
+      <div class="eyebrow ml-auto mt-0 d-md-flex align-items-center">
+         <span class="lets-chat visible-lg-up">Let's Chat</span>
+         <span class="call-now"><a href="tel:+18008597656">1-800-859-7656</a></span>
+         <!--<span class="login-now"><a href="/login">Login</a></span>-->
+         <span class="eyebrow-cta"><a class="btn btn-info cta-open text-white pull-right">Start for Free</a></span>
+      </div>
+      <div class="straight-nav-buttons">
+         <div aria-label="Menu Toggle" class="sidenav-open align-middle px-sm-4 pull-right text-white"><i class="fa fa-bars fa-lg"></i></div>
+         <a class="btn btn-info straight-nav-cta cta-open pull-right">Start for Free</a>
+      </div>
+   </div>
+</nav></div>
+
+<div class="dynamicDiv" id="dd.0.1"><div class="container-fluid py-5">
+  <div class="row">
+    <div class="col-md-3 col-lg-12 col-xl-2 padding-left-xl hidden-xs-down">
+
+      <!-- Begin Left Nav -->
+      <div class="dynamicDiv" id="dd.0.1.0"><nav class="left-nav blog-left-nav hidden-sm-down">
+  <ul>
+    <li><a href="https://www.solodev.com/blog/web-design/" class="cats">Web Design</a><ul class="mb-5 subcats"><li><a href="https://www.solodev.com/blog/web-design/bootstrap/">Bootstrap</a></li><li><a href="https://www.solodev.com/blog/web-design/forms/">Form Tutorials</a></li><li><a href="https://www.solodev.com/blog/web-design/navigation/">Navigation</a></li><li><a href="https://www.solodev.com/blog/web-design/search/">Search</a></li><li><a href="https://www.solodev.com/blog/web-design/sliders/">Sliders</a></li><li><a href="https://www.solodev.com/blog/web-design/social/">Social</a></li></ul></li><li><a href="https://www.solodev.com/blog/digital-marketing/" class="cats">Digital Marketing</a><ul class="mb-5 subcats"><li><a href="https://www.solodev.com/blog/digital-marketing/analytics/">Analytics</a></li><li><a href="https://www.solodev.com/blog/digital-marketing/sem/">SEM</a></li><li><a href="https://www.solodev.com/blog/digital-marketing/seo/">SEO</a></li></ul>  </li></ul>
+</nav></div>
+      
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-7 pl-xl-5 mt-lg-3 mid-content bullets">
+      
+      <!-- Begin Article Content -->
+      <div class="dynamicDiv" id="dd.0.1.1">
+
+<meta name="twitter:image" content="https://www.solodev.com/core/fileparse.php/131/urlt/scroll-down-anchor-button-3.jpg">
+
+
+<section class="row justify-content-md-center">
+  <div class="col-lg-12 col-xl-8">
+    <article>
+      <div class="heading">
+
+        
+
+        
+          <h1>Adding a Scroll Down Anchor to your Website</h1>
+        
+
+        <div class="blog-info mt-4">
+          <p><span class="date mr-5"><i class="fa fa-clock-o text-red">&nbsp;</i> September 12, 2016</span>
+
+          <span class="main_tags"><i class="fa fa-bookmark-o text-red">&nbsp;</i> <a href="https://www.solodev.com/blog/tags/javascript.stml">JavaScript<span>,</span></a> <a href="https://www.solodev.com/blog/tags/tutorials.stml">Tutorials<span>,</span></a> <a href="https://www.solodev.com/blog/tags/scroll.stml">Scroll<span>,</span></a> <a href="https://www.solodev.com/blog/tags/scroll-down-anchor.stml">Scroll-Down Anchor<span>,</span></a> </span>          </p>
+
+        </div>
+        <div class="fixed-share">
+<a class="d-inline-block" href="https://www.facebook.com/share.php?u=https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml" target="_blank" aria-label="Share on Facebook"><i class="fa rounded-circle text-space-gray fa-facebook border-x border-y text-center" aria-hidden="true"></i></a> 
+<a class="d-inline-block" href="https://www.twitter.com/intent/tweet?text=Adding%20a%20Scroll%20Down%20Anchor%20to%20your%20Website&amp;url=https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml" target="_blank" aria-label="Share on Twitter"><i class="fa rounded-circle text-space-gray fa-twitter border-x border-y text-center" aria-hidden="true"></i></a> 
+<a class="d-inline-block" href="https://www.linkedin.com/shareArticle?&amp;url=https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml" target="_blank" aria-label="Share on Linkedin"><i class="fa rounded-circle text-space-gray fa-linkedin border-x border-y text-center" aria-hidden="true"></i></a> 
+<a class="d-inline-block" href="mailto:?subject=Link%20on%20solodev.com/blog&amp;body=https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml" aria-label="Email"><i class="fa rounded-circle text-space-gray fa-envelope-o border-x border-y text-center" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+      </div>
+            
+      <section class="blog-signup padding-right-s hidden-md-up margin-bottom-s">
+        <p class="margin-top-s lead">Subscribe to our blog newsletter.</p>
+              </section>
+
+      <p class="pb-3"><em><strong>Adding a scroll down anchor to your website makes it easier for users to navigate your website...</strong></em></p>
+
+      <div class="text-center">
+        
+          <img src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/scroll-down-anchor-button-3.jpg" alt="Adding a Scroll Down Anchor to your Website" class="img-fluid">
+        
+        
+      </div>
+
+         <div class="blogArticle mt-4"><p>Adding a scroll down anchor button to your website makes it easier for users to navigate through your website without having to manually scroll. This tutorial provides you with the code you need to add an anchor button to your website and the JavaScript to enable scroll down functionality when the button is clicked.</p>
+
+<p>Below is the HTML, CSS, and JavaScript required to add a scroll down anchor to your website.</p>
+
+<h2>Step 1 - Add the HTML below to your web page</h2>
+<textarea class="codemirror-monokai" style="display: none;">&lt;section class="company-heading intro-type" id="parallax-one"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row product-title-info"&gt;
+      &lt;div class="col-md-12"&gt;
+        &lt;h1&gt;DATA. DATA. DATA.&lt;/h1&gt;
+        &lt;a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"&gt;&lt;img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="parallax" id="parallax-cta" style="background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);"&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;div class="main"&gt;
+  &lt;section id="section2"&gt;
+    &lt;div class="container jumbo"&gt;
+      &lt;div class="jumbotron"&gt;
+        &lt;h2&gt;Let Big Data Change the Game&lt;/h2&gt;
+        &lt;p&gt;WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as the customers you serve. There is no 'one size fits all' approach to marketing. Every business is unique, customers are unique, and your marketing should be as well.&lt;/p&gt;
+        &lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 35px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 1142px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 31px; margin-bottom: 0px; border-right-width: 30px; min-height: 1142px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 27px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-variable">section</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"company-heading intro-type"</span> <span class="cm-variable">id</span><span class="cm-operator">=</span><span class="cm-string">"parallax-one"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"container"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"row product-title-info"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"col-md-12"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">h1</span><span class="cm-operator">&gt;</span><span class="cm-variable">DATA</span>. <span class="cm-property">DATA</span>. <span class="cm-property">DATA</span>.<span class="cm-operator">&lt;</span><span class="cm-string-2">/h1&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">a</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"ct-btn-scroll ct-js-btn-scroll"</span> <span class="cm-variable">href</span><span class="cm-operator">=</span><span class="cm-string">"#section2"</span><span class="cm-operator">&gt;&lt;</span><span class="cm-variable">img</span> <span class="cm-variable">alt</span><span class="cm-operator">=</span><span class="cm-string">"Arrow Down Icon"</span> <span class="cm-variable">src</span><span class="cm-operator">=</span><span class="cm-string">"https://www.solodev.com/assets/anchor/arrow-down.png"</span><span class="cm-operator">&gt;&lt;</span><span class="cm-string-2">/a&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-operator">&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"parallax"</span> <span class="cm-variable">id</span><span class="cm-operator">=</span><span class="cm-string">"parallax-cta"</span> <span class="cm-variable">style</span><span class="cm-operator">=</span><span class="cm-string">"background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);"</span><span class="cm-operator">&gt;&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-string-2">/section&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"main"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">section</span> <span class="cm-variable">id</span><span class="cm-operator">=</span><span class="cm-string">"section2"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"container jumbo"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">div</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"jumbotron"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">h2</span><span class="cm-operator">&gt;</span><span class="cm-variable">Let</span> <span class="cm-variable">Big</span> <span class="cm-variable">Data</span> <span class="cm-variable">Change</span> <span class="cm-variable">the</span> <span class="cm-variable">Game</span><span class="cm-operator">&lt;</span><span class="cm-string-2">/h2&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">p</span><span class="cm-operator">&gt;</span><span class="cm-variable">WebCorpCo</span> <span class="cm-variable">is</span> <span class="cm-variable">all</span> <span class="cm-variable">about</span> <span class="cm-variable">making</span> <span class="cm-variable">sure</span> <span class="cm-variable">your</span> <span class="cm-variable">marketing</span> <span class="cm-variable">stack</span> <span class="cm-variable">is</span> <span class="cm-keyword">in</span> <span class="cm-variable">alignment</span> <span class="cm-keyword">with</span> <span class="cm-variable">your</span> <span class="cm-variable">company</span> <span class="cm-variable">as</span> <span class="cm-variable">well</span> <span class="cm-variable">as</span> <span class="cm-variable">the</span> <span class="cm-variable">customers</span> <span class="cm-variable">you</span> <span class="cm-variable">serve</span>. <span class="cm-property">There</span> <span class="cm-variable">is</span> <span class="cm-variable">no</span> <span class="cm-string">'one size fits all'</span> <span class="cm-variable">approach</span> <span class="cm-variable">to</span> <span class="cm-variable">marketing</span>. <span class="cm-property">Every</span> <span class="cm-variable">business</span> <span class="cm-variable">is</span> <span class="cm-variable">unique</span>, <span class="cm-variable">customers</span> <span class="cm-variable">are</span> <span class="cm-variable">unique</span>, <span class="cm-variable">and</span> <span class="cm-variable">your</span> <span class="cm-variable">marketing</span> <span class="cm-variable">should</span> <span class="cm-variable">be</span> <span class="cm-variable">as</span> <span class="cm-variable">well</span>.<span class="cm-operator">&lt;</span><span class="cm-string-2">/p&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-variable">p</span><span class="cm-operator">&gt;&lt;</span><span class="cm-variable">a</span> <span class="cm-keyword">class</span><span class="cm-operator">=</span><span class="cm-string">"btn btn-primary btn-lg"</span> <span class="cm-variable">href</span><span class="cm-operator">=</span><span class="cm-string">"#"</span> <span class="cm-variable">role</span><span class="cm-operator">=</span><span class="cm-string">"button"</span><span class="cm-operator">&gt;</span><span class="cm-variable">Learn</span> <span class="cm-variable">more</span><span class="cm-operator">&lt;</span><span class="cm-string-2">/a&gt;&lt;/</span><span class="cm-variable">p</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-operator">&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-operator">&lt;</span><span class="cm-string-2">/section&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-string-2">/div&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 1142px;"></div><div class="CodeMirror-gutters" style="height: 1172px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 31px;"></div></div></div></div>
+
+<h2>Step 2 - Add the CSS below to the main stylesheet of your website</h2>
+<textarea class="codemirror-monokai" style="display: none;">.separator-type, .title-type, .intro-type, .content-type .intro-type p {
+  position: relative;
+}
+.intro-type .container {
+  padding: 107px 0px 102px 0px !important;
+}
+.company-heading h1 {
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 700 !important;
+  text-align: center;
+}
+.jumbo {
+  margin-top: 50px;
+}
+.seo-header, .product-header, 
+.intro-type .container h1.white, 
+.company-heading h1 {
+  font-weight: 100 !important;
+  text-transform: capitalize;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.parallax {
+  background-attachment: inherit !important;
+}
+.parallax {
+  background-attachment: inherit !important;
+}
+.parallax {
+  background-attachment: inherit !important;
+  background-repeat: repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -10;
+}
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+img, 
+figure {
+  max-width: 100%;
+}
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 35px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 1790px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 31px; margin-bottom: 0px; border-right-width: 30px; min-height: 1790px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>59</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 27px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-variable">separator</span><span class="cm-operator">-</span><span class="cm-variable">type</span>, .<span class="cm-variable">title</span><span class="cm-operator">-</span><span class="cm-variable">type</span>, .<span class="cm-variable">intro</span><span class="cm-operator">-</span><span class="cm-variable">type</span>, .<span class="cm-variable">content</span><span class="cm-operator">-</span><span class="cm-variable">type</span> .<span class="cm-property">intro</span><span class="cm-operator">-</span><span class="cm-variable">type</span> <span class="cm-variable">p</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">position</span>: <span class="cm-variable">relative</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-variable">intro</span><span class="cm-operator">-</span><span class="cm-variable">type</span> .<span class="cm-property">container</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">padding</span>: <span class="cm-number">107</span><span class="cm-variable">px</span> <span class="cm-number">0</span><span class="cm-variable">px</span> <span class="cm-number">102</span><span class="cm-variable">px</span> <span class="cm-number">0</span><span class="cm-variable">px</span> <span class="cm-operator">!</span><span class="cm-variable">important</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-variable">company</span><span class="cm-operator">-</span><span class="cm-variable">heading</span> <span class="cm-variable">h1</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">margin</span><span class="cm-operator">-</span><span class="cm-variable">bottom</span>: <span class="cm-number">60</span><span class="cm-variable">px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">padding</span><span class="cm-operator">-</span><span class="cm-variable">bottom</span>: <span class="cm-number">50</span><span class="cm-variable">px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">line</span><span class="cm-operator">-</span><span class="cm-variable">height</span>: <span class="cm-number">80</span><span class="cm-variable">px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">color</span>: <span class="cm-error">#fff;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">font</span><span class="cm-operator">-</span><span class="cm-variable">weight</span>: <span class="cm-number">700</span> <span class="cm-operator">!</span><span class="cm-variable">important</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">text</span><span class="cm-operator">-</span><span class="cm-variable">align</span>: <span class="cm-variable">center</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-variable">jumbo</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">margin</span><span class="cm-operator">-</span><span class="cm-variable">top</span>: <span class="cm-number">50</span><span class="cm-variable">px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-variable">seo</span><span class="cm-operator">-</span><span class="cm-variable">header</span>, .<span class="cm-variable">product</span><span class="cm-operator">-</span><span class="cm-variable">header</span>, </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">.<span class="cm-variable">intro</span><span class="cm-operator">-</span><span class="cm-variable">type</span> .<span class="cm-property">container</span> <span class="cm-variable">h1</span>.<span class="cm-property">white</span>, </span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 1790px;"></div><div class="CodeMirror-gutters" style="height: 1820px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 31px;"></div></div></div></div>
+
+<h2>Step 3 - Add the JavaScript below to a file named scroll-down.js</h2>
+<textarea class="codemirror-monokai" style="display: none;">$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 290px; left: 67px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 413px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 31px; margin-bottom: 0px; border-right-width: 30px; min-height: 413px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 407px; height: 27px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 378px; width: 32px; height: 27px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 27px; width: 407px; height: 351px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">$</span>(<span class="cm-variable">document</span>).<span class="cm-property">ready</span>(<span class="cm-keyword">function</span>(){</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">$</span>(<span class="cm-string">"a"</span>).<span class="cm-property">on</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>(<span class="cm-def">event</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">if</span> (<span class="cm-keyword">this</span>.<span class="cm-property">hash</span> <span class="cm-operator">!==</span> <span class="cm-string">""</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-variable-2">event</span>.<span class="cm-property">preventDefault</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">hash</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">hash</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-variable">$</span>(<span class="cm-string">'html, body'</span>).<span class="cm-property">animate</span>({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-property">scrollTop</span>: <span class="cm-variable">$</span>(<span class="cm-variable-2">hash</span>).<span class="cm-property">offset</span>().<span class="cm-property">top</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  }, <span class="cm-number">800</span>, <span class="cm-keyword">function</span>(){</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">window</span>.<span class="cm-property">location</span>.<span class="cm-property">hash</span> <span class="cm-operator">=</span> <span class="cm-variable-2">hash</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  });</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  } </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  });</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 413px;"></div><div class="CodeMirror-gutters" style="height: 443px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 31px;"></div></div></div></div>
+
+<h2>Step 4 - Add the includes below to the pages where your anchor button lives</h2>
+<textarea class="codemirror-monokai" style="display: none;">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="scroll-down.js"&gt;&lt;/script&gt;
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 85px; left: 130px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 386px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 30px; min-height: 386px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 409px; height: 27px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 27px; width: 409px; height: 54px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 81px; width: 97px; height: 27px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-variable">script</span> <span class="cm-variable">src</span><span class="cm-operator">=</span><span class="cm-string">"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"</span><span class="cm-operator">&gt;&lt;</span><span class="cm-string-2">/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-variable">link</span> <span class="cm-variable">rel</span><span class="cm-operator">=</span><span class="cm-string">"stylesheet"</span> <span class="cm-variable">href</span><span class="cm-operator">=</span><span class="cm-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span><span class="cm-operator">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-variable">script</span> <span class="cm-variable">src</span><span class="cm-operator">=</span><span class="cm-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="cm-operator">&gt;&lt;</span><span class="cm-string-2">/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-operator">&lt;</span><span class="cm-variable">script</span> <span class="cm-variable">src</span><span class="cm-operator">=</span><span class="cm-string">"scroll-down.js"</span><span class="cm-operator">&gt;&lt;</span><span class="cm-string-2">/script&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 386px;"></div><div class="CodeMirror-gutters" style="height: 416px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div><script data-cfasync="false">window.ju_num="B80C51C5-919A-4E9F-B94B-D24779EC3725";window.asset_host='//cdn.justuno.com/';(function(i,s,o,g,r,a,m){i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script',asset_host+'vck.js','juapp');</script></div>
+
+      <div class="fiddle-embed margin-top-s"><script async="" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/saved_resource"></script><iframe src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/saved_resource.html" id="JSFEMB_17669" width="100%" height="951" frameborder="0" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups"></iframe></div>
+
+    </article>
+    <article class="text-center margin-top-l">
+  
+      
+          <a href="https://github.com/solodev/scroll-down-anchor" class="btn btn-lg clear-gray ml-2" target="_blank">Download from Github</a>
+      
+
+      <hr class="margin-top-xl">
+    </article>
+    <article class="share margin-top-l">
+      <div class="items"><a class="btn orange margin-right-s margin-bottom-s" href="https://www.solodev.com/blog/tags/javascript.stml">JavaScript</a><a class="btn orange margin-right-s margin-bottom-s" href="https://www.solodev.com/blog/tags/tutorials.stml">Tutorials</a><a class="btn orange margin-right-s margin-bottom-s" href="https://www.solodev.com/blog/tags/scroll.stml">Scroll</a><a class="btn orange margin-right-s margin-bottom-s" href="https://www.solodev.com/blog/tags/scroll-down-anchor.stml">Scroll-Down Anchor</a></div>      <div class="social text-right">
+        <a href="http://www.facebook.com/share.php?url=%2F%2Fwww.solodev.com%2Fblog%2Fweb-design%2Fadding-a-scroll-down-anchor-to-your-website.stml" target="_blank" class="btn btn-fb">Share on Facebook</a>
+        <a href="http://twitter.com/share" class="btn btn-tw">Tweet It</a>
+      </div>
+    </article>
+    <article class="author margin-top-l pos-r">
+      <p class="author_absl pos-a pr-2 text-uppercase font-weight-bold white">Author</p>
+      <div class="row">
+        <div class="col-2 mx-auto">
+
+                  <div class="valign-middle">
+            <img alt="" class="img-fluid rounded-circle" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/matt.jpg">
+          </div>
+
+        </div>
+
+        <div class="col-8 mx-auto py-5">
+          
+          
+                    
+          <p class="margin-0"><span class="font-weight-bold">Matthieu McClintock</span> <br>Contributions Editor here at Solodev. Want to be featured on the Solodev Blog? Get in touch. <br><a href="https://twitter.com/mattrmclaren" target="_blank"><u>Follow me on Twitter</u></a></p>
+          
+        </div>
+         
+      </div>
+    </article>
+
+    <article class="comments margin-top-l">
+      <div id="disqus_thread"><iframe id="dsq-app498" name="dsq-app498" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" sandbox="allow-forms allow-popups allow-same-origin allow-scripts" width="100%" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/saved_resource(2).html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 0px !important; display: none !important;"></iframe><iframe id="dsq-app495" name="dsq-app495" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/saved_resource(3).html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 397px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+      <script>
+      /**
+       *RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+       */
+      
+      var disqus_config = function () {
+           this.page.url = 'https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml';
+           this.page.identifier = '450'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      
+      (function() {// DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//solodev.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </article>
+
+  </div>
+</section>
+<script type="application/ld+json">
+{  
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml"
+  },
+  "headline": "Adding a Scroll Down Anchor to your Website",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.solodev.com/core/fileparse.php/131/urlt/0008738-scroll-down-anchor-button-3.jpg",
+    "width": "480",
+    "height": "285"
+  },
+  "datePublished": "September 12, 2016 9:30am",
+  "dateModified": "September 12, 2016 9:30am",
+  "author": {
+    "@type": "Organization",
+    "name": "Solodev CMS"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Solodev CMS",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.solodev.com/_/images/solodev-logo.png",
+      "width": "140",
+      "height": "31"
+    }
+  },
+  "description": "Adding a scroll down anchor to your website makes it easier for users to navigate your website..."
+}
+</script>         
+
+
+
+<script>
+setInterval(function() {
+	$('iframe[src*="disqusads.com"]').each(function() {
+      $(this).css("display", "none");
+    }); 
+}, 100);
+</script></div>
+
+    </div>
+    <div class="col-lg-4 col-xl-3 mt-lg-3">
+
+      <!-- Begin Article Newsletter -->
+      <div class="dynamicDiv" id="dd.0.1.2"><section class="blog-signup padding-right-s hidden-md-down">
+  <h3>Solodev Newsletter</h3>
+  <p class="margin-top-s">Subscribe to our blog newsletter to receive code tutorials and useful design tips.</p>
+  <form class="margin-top-s" id="blogSignup">
+    <div class="form-group">
+      <div class="input-group">
+        <label for="email" class="sr-only">Your email address</label>
+        <input type="text" class="form-control w-100 rounded-left" id="email" name="email" placeholder="john@gmail.com">
+        <div class="input-group-btn">
+          <button class="btn btn-lg red h-100" type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+
+<p class="subscribeBlogThankYou text-bold" style="display:none;">
+Thank you for subscribing!
+</p></div>
+
+      <!-- Begin Article Recent Posts -->
+      <div class="dynamicDiv" id="dd.0.1.3"><section class="recent-posts margin-top-m padding-right-s hidden-xs-down">
+    <p class="h3">Related Posts</p>
+  
+      
+    <div class="row">
+  
+          <article class="col-xs-6 col-sm-3 col-lg-12 mt-4 cursor-pointer-hover">
+        <div class="row align-items-center" onclick="location.href=&#39;/blog/web-design/how-to-use-css-to-create-image-transitions-on-hover.stml&#39;">
+          <div class="col-lg-4">
+            <div class="img-holder">
+              <img alt="" class="img-fluid" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/css1-blog.jpg">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="margin-bottom-0"><strong><a class="text-uppercase text-graphite font-w600" href="https://www.solodev.com/blog/web-design/how-to-use-css-to-create-image-transitions-on-hover.stml">How to Use CSS to Create Image Transitions on Hover</a></strong></p>
+          </div>
+        </div>
+      </article>
+            <article class="col-xs-6 col-sm-3 col-lg-12 mt-4 cursor-pointer-hover">
+        <div class="row align-items-center" onclick="location.href=&#39;/blog/web-design/how-to-craft-a-featured-sectional-for-your-blog.stml&#39;">
+          <div class="col-lg-4">
+            <div class="img-holder">
+              <img alt="" class="img-fluid" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/featured-sectional-for-blog.jpg">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="margin-bottom-0"><strong><a class="text-uppercase text-graphite font-w600" href="https://www.solodev.com/blog/web-design/how-to-craft-a-featured-sectional-for-your-blog.stml">How to Craft a Featured Sectional for Your Blog</a></strong></p>
+          </div>
+        </div>
+      </article>
+            <article class="col-xs-6 col-sm-3 col-lg-12 mt-4 cursor-pointer-hover">
+        <div class="row align-items-center" onclick="location.href=&#39;/blog/web-design/make-a-cta-banner-using-only-css.stml&#39;">
+          <div class="col-lg-4">
+            <div class="img-holder">
+              <img alt="" class="img-fluid" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/banner-blog.jpg">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="margin-bottom-0"><strong><a class="text-uppercase text-graphite font-w600" href="https://www.solodev.com/blog/web-design/make-a-cta-banner-using-only-css.stml">Make a CTA Banner Using Only CSS</a></strong></p>
+          </div>
+        </div>
+      </article>
+            <article class="col-xs-6 col-sm-3 col-lg-12 mt-4 cursor-pointer-hover">
+        <div class="row align-items-center" onclick="location.href=&#39;/blog/web-design/how-to-validate-forms-with-bootstrap.stml&#39;">
+          <div class="col-lg-4">
+            <div class="img-holder">
+              <img alt="" class="img-fluid" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/validate-bootstrap-forms.jpg">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="margin-bottom-0"><strong><a class="text-uppercase text-graphite font-w600" href="https://www.solodev.com/blog/web-design/how-to-validate-forms-with-bootstrap.stml">How to Validate Forms with Bootstrap</a></strong></p>
+          </div>
+        </div>
+      </article>
+              
+    </div>
+  </section></div>
+
+    </div>
+  </div>
+</div></div>
+
+<div class="dynamicDiv" id="dd.0.2"><section class="footer-cta purple-turquoise-fade text-center text-white py-4">
+	<div class="container">
+		<div class="py-4 w-75 w-lg-50 mx-auto">
+			<h2 class="h1">Try it Free for 14 Days</h2>
+
+			<p class="h1-subhead margin-top-s">A website builder, module studio and engagement studio – all in one.</p>
+			<a class="btn btn-hero margin-top-s" data-adata="link_start-for-free" href="https://www.solodev.com/free-trial" title="Try It Free">Start for Free</a>
+
+			<p class="h2-subhead margin-top-m">Lift off now. Cancel anytime.</p>
+		</div>
+	</div>
+</section>
+</div>
+
+<div class="dynamicDiv" id="dd.0.3"><div class="nav-sidenav h-100 position-fixed top-0 text-white">
+  <div class="sidenav-close">
+    <div class="toggle-mobile text-white p-4 text-center h-navbar w-navbar" aria-label="Menu Toggle"><img class="cursor-pointer" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/cross.png" alt="Close Icon"></div>
+  </div>
+  <div class="p-2 sidenav pos-r">
+    <div class="padding-s margin-top-s">
+      <div class="box-nav row">
+        <div class="col-sm-6">
+          <h3><a class="sideNav-home-a cursor-pointer text-red" href="https://www.solodev.com/">Home</a></h3>
+          <ul class="list-unstyled">
+            <li><a class="text-white" href="https://www.solodev.com/pricing/">Pricing</a></li>
+            <li><a class="text-white" href="https://www.solodev.com/resources/">Resources</a></li>
+            <li><a class="text-white" href="https://www.solodev.com/blog/">Blog</a></li>
+            <li><a class="text-white" href="https://www.solodev.com/customers/">Customers</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3><a class="sideNav-home-a cursor-pointer text-red" href="https://www.solodev.com/product/create.stml">Product</a></h3>
+          <ul class="list-unstyled">
+            <li><a class="text-white" href="https://www.solodev.com/pricing/">Buy Now</a></li>
+            <li><a class="text-white" href="https://www.solodev.com/free-trial">Free Trial</a></li>
+            <li><a class="text-white" target="_blank" href="http://support.solodev.com/">Documentation</a></li>
+            <li><a class="text-white" href="mailto:help@solodev.com">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box-social mt-3 mb-5 d-flex">
+        <ul class="m-2 w-100 list-unstyled text-center">
+        <li class="d-inline-block mx-3 mx-xs-4"><a class="text-white" href="http://www.facebook.com/Solodev" target="_blank" aria-label="Facebook"><i class="fa fa-facebook text-white cursor-pointer" aria-hidden="true"></i></a></li>
+        <li class="d-inline-block mx-3 mx-xs-4"><a class="text-white" href="http://twitter.com/solodev" aria-label="Twitter"><i class="fa fa-twitter text-white cursor-pointer" aria-hidden="true"></i></a></li>
+        <li class="d-inline-block mx-3 mx-xs-4"><a class="text-white" href="http://www.linkedin.com/company/solodev" target="_blank"><i class="fa fa-linkedin text-white cursor-pointer"></i></a></li>
+        <li class="d-inline-block mx-3 mx-xs-4"><a class="text-white" href="http://medium.com/@solodev" target="_blank"><i class="fa fa-medium text-white cursor-pointer"></i></a></li>
+        <li class="d-inline-block mx-3 mx-xs-4"><a class="text-white" href="http://github.com/solodev" target="_blank"><i class="fa fa-github text-white cursor-pointer"></i></a></li>
+        </ul>
+      </div>
+      <div class="text-center m-3" onclick="location.href=&#39;/&#39;">
+        <a href="https://www.solodev.com/" class="sidenav-brand"><img alt="Logo" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/solodev-logo-stacked.png"></a>
+      </div>
+      <address class="text-center">
+        800 North Magnolia Blvd, Suite 1400
+        <br> Orlando, Florida, 32803
+        <br>
+        <a href="tel:4078981961">(407) 898-1961</a>
+      </address>
+    </div>
+  </div>
+</div></div>
+
+<div class="dynamicDiv" id="dd.0.4"><footer class="footer margin-top-l">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-9">
+          <h2 class="sr-only">Solodev Content Management System</h2>
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="widget hidden-xs-down">
+                <h4 class="text-uppercase text-bold font-size-1">Product</h4>
+                <ul class="widget-list">
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/create.stml">Create Websites</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/host.stml">Secure Cloud Hosting</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/engage.stml">Engage Your Audience</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/support.stml">Website Support</a></li>
+                </ul>
+              </div>
+              <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+                <div role="tab" id="headingOne">
+                  <h4 class="card-header white border-0 py-3 text-uppercase text-bold">
+                    <a class="w-100 d-block" data-toggle="collapse" data-parent="#accordion" href="https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Product
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block">
+                    <ul class="widget-list">
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/create.stml">Create Websites</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/host.stml">Secure Cloud Hosting</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/engage.stml">Engage Your Audience</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/product/support.stml">Website Support</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget hidden-xs-down">
+                <h4 class="text-uppercase text-bold font-size-1">Company</h4>
+                <ul class="widget-list">
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/company/">About</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/careers/">Careers</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="http://solodev.zendesk.com/" target="_blank">Support</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/pricing/">Pricing</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/pricing#faq">FAQ</a></li>
+                </ul>
+              </div>
+              <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+                <div role="tab" id="headingTwo">
+                  <h4 class="card-header white border-0 py-3 text-uppercase text-bold">
+                    <a class="w-100 d-block" data-toggle="collapse" data-parent="#accordion" href="https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Company
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-block">
+                    <ul class="widget-list">
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/company/">About</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/careers/">Careers</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="http://solodev.zendesk.com/" target="_blank">Support</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/pricing/">Pricing</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/pricing#faq">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget hidden-xs-down">
+                <h4 class="text-uppercase text-bold font-size-1">Resources</h4>
+                <ul class="widget-list">
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/blog/">Blog</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/resources/ebooks/">eBooks</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/resources/whitepapers/">Whitepapers</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/resources/case-studies/">Case Studies</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/news/">News</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/comparison-guide/index.stml">Comparison Guide</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/grader/">Website Grader</a></li>
+                </ul>
+              </div>
+              <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+                <div role="tab" id="headingThree">
+                  <h4 class="card-header white border-0 py-3 text-uppercase text-bold">
+                    <a class="w-100 d-block" data-toggle="collapse" data-parent="#accordion" href="https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Resources
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="card-block">
+                    <ul class="widget-list">
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/blog/">Blog</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/resources/ebooks/">eBooks</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/resources/whitepapers/">Whitepapers</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/comparison-guide/index.stml">Comparison Guide</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/grader/">Website Grader</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="widget hidden-xs-down">
+                <h4 class="text-uppercase text-bold font-size-1">Get Help</h4>
+                <ul class="widget-list">
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://solodev.zendesk.com/hc/en-us" target="_blank">Help Center</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/contact/">Contact Us</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/terms/privacy-policy.stml">Privacy Policy</a></li>
+                  <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/terms/">Terms</a></li>
+                  <!--<li class="mb-1"><a class="text-graphite hover-color-inherit" href="/login.stml">Login</a></li>-->
+                </ul>
+              </div>
+              <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+                <div role="tab" id="headingFour">
+                  <h4 class="card-header white border-0 py-3 text-uppercase text-bold">
+                    <a class="w-100 d-block" data-toggle="collapse" data-parent="#accordion" href="https://www.solodev.com/blog/web-design/adding-a-scroll-down-anchor-to-your-website.stml#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      Get Help
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="card-block">
+                    <ul class="widget-list">
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://solodev.zendesk.com/hc/en-us" target="_blank">Help Center</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/contact/">Contact Us</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/terms/privacy-policy.stml">Privacy Policy</a></li>
+                      <li class="mb-1"><a class="text-graphite hover-color-inherit" href="https://www.solodev.com/terms/">Terms</a></li>
+                      <!--<li class="mb-1"><a class="text-graphite hover-color-inherit" href="/login.stml">Login</a></li>-->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-address text-center my-4 my-lg-0"><a class="navbar-brand" href="https://www.solodev.com/"><img alt="logo" class="logo-w" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/solodev-logo.png"></a>
+            <form class="margin-top-s" id="blog-subscribe">
+              <div class="form-group blog-subscribe">
+                <div class="input-group">
+                  <input class="form-control h-50p" id="email" name="email" placeholder="Your email address" type="email"> <span class="input-group-btn"><button class="btn btn-info blue px-4 h-50p" type="submit">Subscribe</button> </span></div>
+              </div>
+            </form>
+            <p class="subscribeBlogThankYou text-bold" style="display:none;">Thank you for subscribing!</p>
+            <div class="address">
+              <p>Proudly Made in Space <i class="fa fa-rocket text-purple" aria-hidden="true"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row margin-top-s">
+        <div class="col">
+          <div class="widget">
+            <h4 class="text-uppercase text-bold font-size-1">Popular Topics</h4>
+            <a class="text-link-blue" href="https://www.solodev.com/resources/ebooks/7-critical-factors-when-selecting-a-website-cms.stml">Selecting a Content Management System,</a> <a class="text-link-blue" href="https://www.solodev.com/features/customer-experience.stml">Customer Experience,</a> <a class="text-link-blue" href="https://www.solodev.com/features/web-content-management.stml">Content Management,</a> <a class="text-link-blue" href="https://www.solodev.com/product/host.stml">Cloud Hosting,</a> <a class="text-link-blue" href="https://www.solodev.com/product/create.stml#api-studio">Third-party Integration,</a>
+            <br class="hidden-lg-down">
+            <a class="text-link-blue" href="https://www.solodev.com/features/web-development.stml">Web Development,</a> <a class="text-link-blue" href="https://www.solodev.com/blog/">Web Design,</a> <a class="text-link-blue" href="https://www.solodev.com/product/engage.stml">Digital Experience,</a> <a class="text-link-blue" href="http://aws.amazon.com/marketplace/seller-profile?id=8e11c912-6253-41b8-b065-bf32bd27911b">Amazon Web Services,</a> <a class="text-link-blue" href="https://www.solodev.com/product/support.stml">Support,</a> <a class="text-link-blue" href="https://www.solodev.com/solutions/">Web Development Solutions</a></div>
+        </div>
+      </div>
+      <div class="sub-footer border-top padding-top-s margin-top-m w-lg-75">
+        <ul class="social-icons pull-left list-unstyled">
+          <li class="d-inline-block mr-3"><a class="text-graphite hover-color-inherit" href="http://www.facebook.com/Solodev" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li class="d-inline-block mr-3"><a class="text-graphite hover-color-inherit" href="http://twitter.com/solodev" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li class="d-inline-block mr-3"><a class="text-graphite hover-color-inherit" href="http://www.linkedin.com/company/solodev" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+          <li class="d-inline-block mr-3"><a class="text-graphite hover-color-inherit" href="http://medium.com/@solodev" target="_blank"><i class="fa fa-medium"></i> Medium</a></li>
+          <li class="d-inline-block mr-3"><a class="text-graphite hover-color-inherit" href="http://solodevcms.tumblr.com/"><i class="fa fa-tumblr"></i> Tumblr</a></li>
+          <li class="d-inline-block mr-3"><a class="text-graphite hover-color-inherit" href="http://github.com/solodev" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+        </ul>
+        <div class="footer-contact float-sm-left float-lg-right w-lg-25"><a href="mailto:info@solodev.com">info@solodev.com</a> | <a href="tel:8008597656">800-859-7656</a></div>
+      </div>
+    </div>
+  </footer></div>
+<script src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/app.min.js"></script>
+<section class="toggle-form">
+  <div class="formwrap px-4">
+    <div class="icon-close pos-a"><img src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/cross.png" alt="Close Button"></div>
+    <p class="text-white h3">Try Solodev for Free!</p>
+		<form action="https://go.pardot.com/l/400032/2017-11-08/6hx9f8" method="post" role="form" data-toggle="validator" novalidate="true">
+			<div class="form-group margin-top-m">
+			  <label for="fname" class="control-label">First name</label>
+			  <input type="text" id="fname" name="fname" class="form-control" data-error="Please enter your first name" required="">
+			  <div class="help-block with-errors"></div>
+			</div>
+			<div class="form-group">
+			  <label for="lname" class="control-label">Last name</label>
+			  <input type="text" id="lname" name="lname" class="form-control required" data-error="Please enter your last name" required="">
+			  <div class="help-block with-errors"></div>
+			</div>
+			<div class="form-group">
+			  <label for="email_address" class="control-label">Email address</label>
+			  <input type="text" id="email_address" name="email_address" class="form-control validate[required,custom[email]]" data-error="Please enter a valid email" required="">
+			  <div class="help-block with-errors"></div>
+			</div>
+			<div class="form-group">
+			  <label for="phone" class="control-label">Phone number</label>
+			  <input type="text" id="phone" name="phone" class="form-control required" data-error="Please enter a valid phone number" required="">
+			  <div class="help-block with-errors"></div>
+			</div>
+			<div class="row">
+			  <div class="col-md-6 mid-col">
+			    <div class="form-group">
+			      <label for="company_size" class="control-label">Company Size?</label>
+			      <select name="company_size" id="company_size" class="form-control required" data-error="Please select your company size" required="">
+			        <option value=""></option>
+			        <option value="1-4 employees">1-4 employees</option>
+			        <option value="5-9 employees">5-9 employees</option>
+			        <option value="10-49 employees">10-49 employees</option>
+			        <option value="50-199 employees">50-199 employees</option>
+			        <option value="200-499 employees">200-499 employees</option>
+			        <option value="500-999 employees">500-999 employees</option>
+			        <option value="1000+ employees">1000+ employees</option>
+			      </select>
+			      <div class="help-block with-errors"></div>
+			    </div>
+			  </div>
+			  <div class="col-md-6 mid-col">
+			    <div class="form-group">
+			      <label for="role" class="control-label">Select you role</label>
+			      <select name="role" id="role" class="form-control required" data-error="Please select your role" required="">
+			        <option value=""></option>
+			        <option value="Web Developer">Web Developer</option>
+			        <option value="Marketing Professional">Marketing Professional</option>
+			        <option value="Business Executive">Business Executive</option>
+			      </select>
+			      <div class="help-block with-errors"></div>
+			    </div>
+			  </div>
+			</div>
+			<p class="text-center margin-top-s"><small>By clicking "Submit" you agree to Solodev’s <a href="https://www.solodev.com/terms/">Terms of Service</a>.</small></p>
+			<p class="margin-0"><button type="submit" class="btn btn-lg orange w-100 margin-top-s disabled">Submit</button></p>
+		</form>
+      
+  </div>
+<div class="toggle-bg"></div>
+</section>
+      
+      
+      
+                               
+<!-- start google structured data (https://developers.google.com/search/docs/guides/enhance-site) -->
+ <script type="application/ld+json">
+ { 
+ "@context" : "http://schema.org",
+ "@type" : "Organization",
+ "name" : "Solodev",
+ "url" : "https://www.solodev.com/",
+ "logo": "https://www.solodev.com/_/images/solodev-logo.png",
+ "sameAs" : [ 
+ "https://www.facebook.com/Solodev",
+ "https://twitter.com/solodev",
+ "https://www.linkedin.com/company/solodev"
+ ]
+ }
+ </script>
+<!-- end google structured data -->   
+  
+<script type="text/javascript">
+piAId = '401032';
+piCId = '51481';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>  
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBTNVD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBTNVD');</script>
+<!-- End Google Tag Manager -->
+  
+      <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b59a36cebf","applicationID":"60217224","transactionName":"NlMDY0oADEICAUVbXg8ZNEVRTgBdDAUeRVQDGwVSSwgFX0wDVVZYD1FMVhUSAUMMDl0fVQ5BDxpZDwFZDBAcRl5MTw5CSkwVVAERWEZUT0UVWlQ=","queueTime":0,"applicationTime":136,"atts":"GhQAFQIaH0w=","errorBeacon":"bam.nr-data.net","agent":""}</script><iframe style="display: none;" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/saved_resource(4).html"></iframe>
+<script type="text/javascript" id="">var ezt=ezt||[];(function(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https://secure":"http://pixel")+".quantserve.com/aquant.js?a\x3dp-WxfSuuBK1Tnn5";a.async=!0;a.type="text/javascript";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();ezt.push({qacct:"p-WxfSuuBK1Tnn5",orderid:"",revenue:""});</script>
+<noscript>
+  <img src="//pixel.quantserve.com/pixel/p-WxfSuuBK1Tnn5.gif?labels=_fp.event.Default" style="display: none;" border="0" height="1" width="1" alt="Quantcast">
+</noscript>
+<script type="text/javascript" id="">(function(d,e,f,b,c,a){c="";b="https://tracking.g2crowd.com/attribution_tracking/conversions/"+d+".js?p\x3d"+encodeURI(e)+"\x26e\x3d"+c;a=document.createElement("script");a.type="application/javascript";a.src=b;f.getElementsByTagName("head")[0].appendChild(a)})("633",document.location.href,document);</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","130415897775561",{fn:"Adding a Scroll Down Anchor to your Website | Solodev"});fbq("set","agent","tmgoogletagmanager","130415897775561");fbq("track","PageView");</script>
+<script type="text/javascript" id="">adroll_adv_id="LLGFZQR7H5BBFGEJ3U4WGX";adroll_pix_id="6WTZ2K5FKJHWNCEWCGHSKL";
+(function(){var a=function(){if(document.readyState&&!/loaded|complete/.test(document.readyState))setTimeout(a,10);else if(window.__adroll_loaded){var b=document.createElement("script"),c="https:"==document.location.protocol?"https://s.adroll.com":"http://a.adroll.com";b.setAttribute("async","true");b.type="text/javascript";b.src=c+"/j/roundtrip.js";((document.getElementsByTagName("head")||[null])[0]||document.getElementsByTagName("script")[0].parentNode).appendChild(b)}else __adroll_loaded=!0,setTimeout(a,
+50)};window.addEventListener?window.addEventListener("load",a,!1):window.attachEvent("onload",a)})();</script>
+<script type="text/javascript" id="">!function(b,c,d,a){b.twq||(a=b.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1",a.queue=[],t=c.createElement(d),t.async=!0,t.src="//static.ads-twitter.com/uwt.js",s=c.getElementsByTagName(d)[0],s.parentNode.insertBefore(t,s))}(window,document,"script");twq("init","nvha0");twq("track","PageView");</script>
+<div id="ju_overlay" class="ju_overlay" style="position:fixed;"></div><div class="ju_Con" id="ju_Con_268104" data-position="10" data-zindex="999998" style="z-index: 999998; position: fixed; display: none; height: 100%; width: 100%; left: 0px; top: 0px;" data-title="Bottom%20Popup%20-%20Demo"><div class="ju_wrapper" style="width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch;overflow-x: hidden;"><iframe name="ju_iframe" class="ju_iframe" id="ju_iframe_268104" allowtransparency="true" scrolling="no" frameborder="0" src="./Adding a Scroll Down Anchor to your Website _ Solodev_files/ifm_3.6.html" style="width: 1292px; opacity: 1;"></iframe></div></div></body></html>

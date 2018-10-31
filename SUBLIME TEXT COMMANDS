@@ -1,0 +1,80 @@
+SUBLIME TEXT TRICKS!
+
+## CMD + /: BLACKOUT
+
+Comment out current line.
+
+
+## CMD + CTRL + G: UNIVERSAL SUMMONS
+
+select code then press CMD + CTRL + G will select ALL of the identical codes
+
+
+## CMD + D: ONE-LINE SUMMON
+
+select code and press CMD + D will select next same piece of code as well (good for batch changing variable names)
+
+
+## CMD + SHIFT + D: DOUBLE TEAM
+duplicates a line of code the cursor is on
+
+
+## CTRL + CMD + up/down: DOUBLE PASSE(SERGIO'S BECKONING)
+
+move line/lines up and down
+
+
+## CMD + (K, B):
+
+show/hide the file explorer on the left side
+(Excellent to use when doing a STT/Terminal Split Screen)
+
+## CMD + T:
+
+quick switch between files
+
+
+## CTRL + F:
+
+search within current tab
+
+## CTRL + SHIFT + F:
+
+search within the folder (all the files)
+
+## CMD + SHIFT + P:
+
+open command pallete, access most commands in sublime text
+
+## CMD + SHIFT + left [ or right ]
+
+select previous / next tab
+
+## CMD + W:
+
+close current tab
+
+## CMD + SHIFT + T:
+
+undo close tab
+
+## CMD + Z:
+
+undo edit
+
+## CMD + SHIFT + Z:
+
+redo
+------------------
+## CMD + [
+REMOVE TAB in line
+
+## CMD + ]
+ADD TAB in line
+
+??? ## OPTION + SHIFT + F: ???
+## CMD + SHIFT + P:  then type: Reindent
+
+auto indent the code selected, or the whole page without any selection
+????
+------------------

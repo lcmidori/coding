@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://s.codepen.io/HZaccaro/fullembedgrid/zvrgLb?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>CodePen - Smooth Scroll</title>
+  
+  
+  
+  
+      <style>
+      .smoothScroll {
+  text-decoration: none;
+	font-family: Segoe UI;
+  margin: 24px;
+}
+.title {
+  text-decoration: none;
+	font-family: Segoe UI;
+  margin: 24px;
+}
+.content {
+  margin-top: 100%;
+  margin-bottom: 100%;
+}
+small {
+  margin-left: 24px;
+  color: gray;
+}
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+
+  <h1 class="title" id="top">Imagine your things at the top</h1>
+<!-- Everything that you want smooth scrolling you should put that class -->
+<!-- Remember: that's because i changed the script -->
+<a class="smoothScroll" href="https://s.codepen.io/HZaccaro/fullembedgrid/zvrgLb?type=embed&amp;animations=run#bottom">Click here to smooth scroll to the bottom of the page</a>
+<div class="content"></div>
+<h1 class="title">And here the content that the user will reach through the link<small>sorry for the bad english</small></h1>
+<!-- Always put the class="smoothScroll" -->
+<!-- Always make sure to put href="#some-local-id" -->
+<a class="smoothScroll" href="https://s.codepen.io/HZaccaro/fullembedgrid/zvrgLb?type=embed&amp;animations=run#top" id="bottom">Click here to smooth scroll to the top of the page</a>
+
+<!-- Get jQuery down below so it can work properly -->
+<!-- You can get any other version, it's just an example -->
+<script src="./jquery.min.js"></script>
+
+<!-- Change the speed of the scroll in the JS file. Follow the instructions there -->
+    <script src="./stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+
+  
+  
+
+    <script>
+      $(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+
+// Change the speed to whatever you want
+// Personally i think 1000 is too much
+// Try 800 or below, it seems not too much but it will make a difference
+      //# sourceURL=pen.js
+    </script>
+
+
+
+  
+  
+
+
+
+
+ </body></html>

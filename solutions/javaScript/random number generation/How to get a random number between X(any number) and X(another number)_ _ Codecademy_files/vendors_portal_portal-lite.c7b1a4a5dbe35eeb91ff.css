@@ -1,0 +1,54 @@
+.tabListItem__3YdRvkvOLltoVUsFnnzkRJ {
+  list-style-type: none;
+  flex: 1 1;
+  min-width: 6rem;
+  max-width: 20rem; }
+  .tabListItem__3YdRvkvOLltoVUsFnnzkRJ:first-of-type a {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-left: 1px solid #544f7b; }
+  .tabListItem__3YdRvkvOLltoVUsFnnzkRJ:last-of-type a {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+
+.tab__3HMULjwedGxeeMb6ZaMjG3 {
+  display: block;
+  border: 1px solid #544f7b;
+  border-left: 0;
+  padding: 0.5rem;
+  color: #544f7b;
+  font-weight: bold;
+  text-decoration: none !important;
+  text-align: center;
+  transition: color 0.2s, background-color 0.2s;
+  outline: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+  .tab__3HMULjwedGxeeMb6ZaMjG3:hover, .tab__3HMULjwedGxeeMb6ZaMjG3:focus {
+    background-color: #e1e0eb; }
+
+.active__1JyUboQNDxApjiAEg9KpiE {
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+  background-color: #544f7b; }
+  .active__1JyUboQNDxApjiAEg9KpiE:hover, .active__1JyUboQNDxApjiAEg9KpiE:focus {
+    background-color: #544f7b;
+    color: #ffffff; }
+  .active__1JyUboQNDxApjiAEg9KpiE:focus {
+    background-color: #69639a; }
+
+.tabList__3dD3YKns5oYaVcG_UKOVkZ {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  overflow: auto; }
+
+.center__3snWWNDBWxvWBlWi2e_Yer {
+  justify-content: center; }
+
+
+/*# sourceMappingURL=vendors~portal~portal-lite.c7b1a4a5dbe35eeb91ff.css.map*/
